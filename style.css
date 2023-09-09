@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&family=Roboto+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-top: 10px;
+    height: 100px ;
+    background-color: #ffff;
+    box-shadow: 0px 1px 30px rgba(83, 81, 81, 0.32);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.logodev{
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.logowhats{
+    width: 40px;
+    height:40px;
+    margin-top: 20px;
+}
+
+.logonumero{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header p{
+    margin-top: 30px;
+    color: black;
+}
+
+header a{
+    text-decoration: none;
+}
+
+
+.apresentacao{
+    margin-top: 70px;
+    font-family: 'Roboto Mono', monospace;
+    height: 470px;
+}
+
+.apresentacao_01{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.apresentacao_01 img{
+    width: 30%;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.apresentacao_02{
+    width: 40%;
+    margin-top: 30px;
+}
+
+.apresentacao_02 h2{
+    font-size: 40px;
+    color: #1873ed;
+}
+
+.titulo::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    
+}
+
+.apresentacao_02 p{
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    height: 530px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.box{
+    margin-right: 40px;
+    width: 25%;
+    height: 430px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 7px -7px 20px #155cb83a;;
+    padding-top: 40px;
+}
+
+.box img{
+    width: 30%;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.box p{
+    margin-top: 25px;
+    padding: 6px;
+}
+
+.chamada{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    height: 300px;
+}
+
+.chamada h2{
+    font-size: 50px;
+}
+
+.chamada p{
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.chamada button{
+    width: 30%;
+    height: 50px;
+    font-size: 24px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgb(34, 210, 34);
+    transition: 2s;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.chamada button:hover{
+    background-color:rgb(27, 151, 27);
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+
+
+/* Aqui começa responsivo*/
+
+
+@media screen and (max-width: 768px){
+    header{
+        justify-content: space-between;
+    }
+
+    .logowhats{
+        margin-right: 25px;
+    }
+    
+    header p{
+        display: none;
+    }
+
+   .apresentacao_01{
+    flex-direction: column;
+   }
+
+   .apresentacao_01 img{
+    width: 100%;
+}
+
+.apresentacao_02{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.apresentacao_02 h2{
+    font-size: 30px;
+    color: #1873ed;
+}
+
+.produtos{
+    margin-top: 390px;
+}
+
+.box{
+    width: 100%;
+    margin: 40px auto;
+}
+
+
+.box p{
+    font-size: 17px;
+}
+
+.chamada{
+    margin-top: 520px;
+}
+
+.chamada h2{
+    font-size: 40px;
+}
+
+.chamada button{
+    width: 100%;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+
+   
+}
+
