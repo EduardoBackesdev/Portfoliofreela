@@ -192,10 +192,13 @@ footer{
 
    .apresentacao_01{
     flex-direction: column;
+
    }
 
    .apresentacao_01 img{
-    width: 100%;
+    margin: 0px auto;
+    width: 80%;
+    max-height: 300px;
 }
 
 .apresentacao_02{
@@ -210,7 +213,7 @@ footer{
 }
 
 .produtos{
-    margin-top: 390px;
+    margin-top: 300px;
 }
 
 .box{
